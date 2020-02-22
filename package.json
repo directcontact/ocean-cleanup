@@ -1,0 +1,19 @@
+{
+  "name": "ocean-cleanup",
+  "version": "1.0.0",
+  "description": "DC2020",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimjeff49/ocean-cleanup.git"
+  },
+  "author": "Jeff Kim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kimjeff49/ocean-cleanup/issues"
+  },
+  "homepage": "https://github.com/kimjeff49/ocean-cleanup#readme"
+}
