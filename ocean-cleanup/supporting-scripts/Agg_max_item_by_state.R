@@ -33,7 +33,7 @@ ocean.landsub.agg <- aggregate(ocean.landsub[c(2:48)], by = list(ocean.landsub$S
 ocean.landsub.agg$max <- colnames(ocean.landsub.agg)[apply(ocean.landsub.agg,1,which.max)]
 
 #most popular garbage for land in each state
-ocean.land.maxitembystate <- ocean.landsub.agg[c(1,48)]
+ocean.land.maxitembystate <- ocean.landsub.agg[c(1,49)]
 
 
 #subset for underwater
@@ -49,7 +49,7 @@ ocean.underwatersub.agg <- aggregate(ocean.underwatersub[c(2:48)], by = list(oce
 ocean.underwatersub.agg$max <- colnames(ocean.underwatersub.agg)[apply(ocean.underwatersub.agg,1,which.max)]
 
 #most popular garbage for underwater in each state
-ocean.underwater.maxitembystate <- ocean.underwatersub.agg[c(1,48)]
+ocean.underwater.maxitembystate <- ocean.underwatersub.agg[c(1,49)]
 
 
 #subset for watercraft
@@ -65,6 +65,6 @@ ocean.watercraftsub.agg <- aggregate(ocean.watercraftsub[c(2:48)], by = list(oce
 ocean.watercraftsub.agg$max <-colnames(ocean.watercraftsub.agg)[apply(ocean.watercraftsub.agg,1,which.max)]
 
 #most popular garbage for watercraft in each state
-ocean.watercraft.maxitembystate <- ocean.watercraftsub.agg[c(1,48)]
+ocean.watercraft.maxitembystate <- ocean.watercraftsub.agg[c(1,49)]
 
 
