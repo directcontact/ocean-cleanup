@@ -24,10 +24,10 @@ ocean$Cigar.Tips <- as.integer(ocean$Cigar.Tips)
 ocean.land <- subset(ocean, ocean$Cleanup.Type == "Land (beach, shoreline and inland)")
 
 #excluding unncessary information
-ocean.landsub <- ocean.land[-c(1:2,4:14, 61)]
+ocean.landsub <- ocean.land[-c(1:2,4:13, 61)]
 
 #aggregate each item by state
-ocean.landsub.agg <- aggregate(ocean.landsub[c(2:47)], by = list(ocean.landsub$State), FUN=sum, na.rm=FALSE)
+ocean.landsub.agg <- aggregate(ocean.landsub[c(2:48)], by = list(ocean.landsub$State), FUN=sum, na.rm=FALSE)
 
 #Finds the column that has max number for each row
 ocean.landsub.agg$max <- colnames(ocean.landsub.agg)[apply(ocean.landsub.agg,1,which.max)]
@@ -40,10 +40,10 @@ ocean.land.maxitembystate <- ocean.landsub.agg[c(1,48)]
 ocean.underwater <- subset(ocean, ocean$Cleanup.Type == "Underwater")
 
 #excluding unncessary information
-ocean.underwatersub <- ocean.underwater[-c(1:2,4:14, 61)]
+ocean.underwatersub <- ocean.underwater[-c(1:2,4:13,61)]
 
 #aggregate each item by state
-ocean.underwatersub.agg <- aggregate(ocean.underwatersub[c(2:47)], by = list(ocean.underwatersub$State), FUN=sum, na.rm=FALSE)
+ocean.underwatersub.agg <- aggregate(ocean.underwatersub[c(2:48)], by = list(ocean.underwatersub$State), FUN=sum, na.rm=FALSE)
 
 #Finds the column that has max number for each row
 ocean.underwatersub.agg$max <- colnames(ocean.underwatersub.agg)[apply(ocean.underwatersub.agg,1,which.max)]
@@ -56,10 +56,10 @@ ocean.underwater.maxitembystate <- ocean.underwatersub.agg[c(1,48)]
 ocean.watercraft <- subset(ocean, ocean$Cleanup.Type == "Watercraft (powerboat, sailboat, kayak or canoe)")
 
 #excluding unncessary information
-ocean.watercraftsub <- ocean.watercraft[-c(1:2,4:14, 61)]
+ocean.watercraftsub <- ocean.watercraft[-c(1:2,4:13, 61)]
 
 #aggregate each item by state
-ocean.watercraftsub.agg <- aggregate(ocean.watercraftsub[c(2:47)], by = list(ocean.watercraftsub$State), FUN=sum, na.rm=FALSE)
+ocean.watercraftsub.agg <- aggregate(ocean.watercraftsub[c(2:48)], by = list(ocean.watercraftsub$State), FUN=sum, na.rm=FALSE)
 
 #Finds the column that has max number for each row
 ocean.watercraftsub.agg$max <-colnames(ocean.watercraftsub.agg)[apply(ocean.watercraftsub.agg,1,which.max)]
